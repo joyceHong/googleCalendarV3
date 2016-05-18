@@ -1,0 +1,1866 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.Plus.v1domains</name>
+    </assembly>
+    <members>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Acl.Description">
+            <summary>Description of the access granted, suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Acl.DomainRestricted">
+            <summary>Whether access is restricted to the domain.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Acl.Items">
+            <summary>The list of access entries.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Acl.Kind">
+            <summary>Identifies this resource as a collection of access controls. Value: "plus#acl".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Acl.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Access">
+            <summary>Identifies who has access to see this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Actor">
+            <summary>The person who performed this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Address">
+            <summary>Street address where this activity occurred.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Annotation">
+            <summary>Additional content added by the person who shared this activity, applicable only when resharing an
+            activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.CrosspostSource">
+            <summary>If this activity is a crosspost from another system, this property specifies the ID of the original
+            activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Geocode">
+            <summary>Latitude and longitude where this activity occurred. Format is latitude followed by longitude,
+            space separated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Id">
+            <summary>The ID of this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Kind">
+            <summary>Identifies this resource as an activity. Value: "plus#activity".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Location">
+            <summary>The location where this activity occurred.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Object">
+            <summary>The object of this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.PlaceId">
+            <summary>ID of the place where this activity occurred.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.PlaceName">
+            <summary>Name of the place where this activity occurred.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Provider">
+            <summary>The service provider that initially published this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Published">
+            <summary>The time at which this activity was initially published. Formatted as an RFC 3339
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Radius">
+            <summary>Radius, in meters, of the region where this activity occurred, centered at the latitude and
+            longitude identified in geocode.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Title">
+            <summary>Title of this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Updated">
+            <summary>The time at which this activity was last updated. Formatted as an RFC 3339 timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Url">
+            <summary>The link to this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.Verb">
+            <summary>This activity's verb, which indicates the action that was performed. Possible values include, but
+            are not limited to, the following values: - "post" - Publish content to the stream. - "share" - Reshare an
+            activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ActorData">
+            <summary>The person who performed this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.DisplayName">
+            <summary>The name of the actor, suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.Id">
+            <summary>The ID of the actor's Person resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.Image">
+            <summary>The image representation of the actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.Name">
+            <summary>An object representation of the individual components of name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.Url">
+            <summary>The link to the actor's Google profile.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ActorData.ImageData">
+            <summary>The image representation of the actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.ImageData.Url">
+            <summary>The URL of the actor's profile photo. To resize the image and crop it to a square, append
+            the query string ?sz=x, where x is the dimension in pixels of each side.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ActorData.NameData">
+            <summary>An object representation of the individual components of name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.NameData.FamilyName">
+            <summary>The family name ("last name") of the actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ActorData.NameData.GivenName">
+            <summary>The given name ("first name") of the actor.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData">
+            <summary>The object of this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Actor">
+            <summary>If this activity's object is itself another activity, such as when a person reshares an
+            activity, this property specifies the original activity's actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Attachments">
+            <summary>The media objects attached to this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Content">
+            <summary>The HTML-formatted content, which is suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Id">
+            <summary>The ID of the object. When resharing an activity, this is the ID of the activity that is being
+            reshared.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ObjectType">
+            <summary>The type of the object. Possible values include, but are not limited to, the following values:
+            - "note" - Textual content. - "activity" - A Google+ activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.OriginalContent">
+            <summary>The content (text) as provided by the author, which is stored without any HTML formatting. When
+            creating or updating an activity, this value must be supplied as plain text in the request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Plusoners">
+            <summary>People who +1'd this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Replies">
+            <summary>Comments in reply to this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Resharers">
+            <summary>People who reshared this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewer">
+            <summary>Status of the activity as seen by the viewer.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.Url">
+            <summary>The URL that points to the linked resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData">
+            <summary>If this activity's object is itself another activity, such as when a person reshares an
+            activity, this property specifies the original activity's actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.DisplayName">
+            <summary>The original actor's name, which is suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.Id">
+            <summary>ID of the original actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.Image">
+            <summary>The image representation of the original actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.Url">
+            <summary>A link to the original actor's Google profile.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.ImageData">
+            <summary>The image representation of the original actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ActorData.ImageData.Url">
+            <summary>A URL that points to a thumbnail photo of the original actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Content">
+            <summary>If the attachment is an article, this property contains a snippet of text from the article.
+            It can also include descriptions for other types.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.DisplayName">
+            <summary>The title of the attachment, such as a photo caption or an article title.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Embed">
+            <summary>If the attachment is a video, the embeddable link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImage">
+            <summary>The full image URL for photo attachments.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Id">
+            <summary>The ID of the attachment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Image">
+            <summary>The preview image for photos or videos.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ObjectType">
+            <summary>The type of media object. Possible values include, but are not limited to, the following
+            values: - "photo" - A photo. - "album" - A photo album. - "video" - A video. - "article" - An
+            article, specified by a link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.PreviewThumbnails">
+            <summary>When previewing, these are the optional thumbnails for the post. When posting an article,
+            choose one by setting the attachment.image.url property. If you don't choose one, one will be chosen
+            for you.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Thumbnails">
+            <summary>If the attachment is an album, this property is a list of potential additional thumbnails
+            from the album.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.Url">
+            <summary>The link to the attachment; should be of type text/html.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.EmbedData">
+            <summary>If the attachment is a video, the embeddable link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.EmbedData.Type">
+            <summary>Media type of the link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.EmbedData.Url">
+            <summary>URL of the link.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImageData">
+            <summary>The full image URL for photo attachments.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImageData.Height">
+            <summary>The height, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImageData.Type">
+            <summary>Media type of the link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImageData.Url">
+            <summary>URL of the image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.FullImageData.Width">
+            <summary>The width, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ImageData">
+            <summary>The preview image for photos or videos.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ImageData.Height">
+            <summary>The height, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ImageData.Type">
+            <summary>Media type of the link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ImageData.Url">
+            <summary>Image URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ImageData.Width">
+            <summary>The width, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.PreviewThumbnailsData.Url">
+            <summary>URL of the thumbnail image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.Description">
+            <summary>Potential name of the thumbnail.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.Image">
+            <summary>Image resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.Url">
+            <summary>URL of the webpage containing the image.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.ImageData">
+            <summary>Image resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.ImageData.Height">
+            <summary>The height, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.ImageData.Type">
+            <summary>Media type of the link.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.ImageData.Url">
+            <summary>Image url.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.AttachmentsData.ThumbnailsData.ImageData.Width">
+            <summary>The width, in pixels, of the linked resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.PlusonersData">
+            <summary>People who +1'd this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.PlusonersData.SelfLink">
+            <summary>The URL for the collection of people who +1'd this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.PlusonersData.TotalItems">
+            <summary>Total number of people who +1'd this activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.RepliesData">
+            <summary>Comments in reply to this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.RepliesData.SelfLink">
+            <summary>The URL for the collection of comments in reply to this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.RepliesData.TotalItems">
+            <summary>Total number of comments on this activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ResharersData">
+            <summary>People who reshared this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ResharersData.SelfLink">
+            <summary>The URL for the collection of resharers.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.ResharersData.TotalItems">
+            <summary>Total number of people who reshared this activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewerData">
+            <summary>Status of the activity as seen by the viewer.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewerData.CanComment">
+            <summary>Whether the viewer can comment on the activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewerData.CanPlusone">
+            <summary>Whether the viewer can +1 the activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewerData.IsPlusOned">
+            <summary>Whether the viewer has +1'd the activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ObjectData.StatusForViewerData.ResharingDisabled">
+            <summary>Whether reshares are disabled for the activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Activity.ProviderData">
+            <summary>The service provider that initially published this activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Activity.ProviderData.Title">
+            <summary>Name of the service provider.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.Id">
+            <summary>The ID of this collection of activities. Deprecated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.Items">
+            <summary>The activities in this page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.Kind">
+            <summary>Identifies this resource as a collection of activities. Value: "plus#activityFeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.NextLink">
+            <summary>Link to the next page of activities.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.NextPageToken">
+            <summary>The continuation token, which is used to page through large result sets. Provide this value in a
+            subsequent request to return the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.SelfLink">
+            <summary>Link to this activities resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.Title">
+            <summary>The title of this collection of activities, which is a truncated portion of the content.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.ActivityFeed.Updated">
+            <summary>The time at which this collection of activities was last updated. Formatted as an RFC 3339
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Audience.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Audience.Item">
+            <summary>The access control list entry.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Audience.Kind">
+            <summary>Identifies this resource as an audience. Value: "plus#audience".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Audience.Visibility">
+            <summary>The circle members' visibility as chosen by the owner of the circle. This only applies for items
+            with "item.type" equals "circle". Possible values are: - "public" - Members are visible to the public. -
+            "limited" - Members are visible to a limited audience. - "private" - Members are visible to the owner
+            only.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.AudiencesFeed.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.AudiencesFeed.Items">
+            <summary>The audiences in this result.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.AudiencesFeed.Kind">
+            <summary>Identifies this resource as a collection of audiences. Value: "plus#audienceFeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.AudiencesFeed.NextPageToken">
+            <summary>The continuation token, which is used to page through large result sets. Provide this value in a
+            subsequent request to return the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.AudiencesFeed.TotalItems">
+            <summary>The total number of ACL entries. The number of entries in this response may be smaller due to
+            paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.Description">
+            <summary>The description of this circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.DisplayName">
+            <summary>The circle name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.Id">
+            <summary>The ID of the circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.Kind">
+            <summary>Identifies this resource as a circle. Value: "plus#circle".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.People">
+            <summary>The people in this circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.SelfLink">
+            <summary>Link to this circle resource</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Circle.PeopleData">
+            <summary>The people in this circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Circle.PeopleData.TotalItems">
+            <summary>The total number of people in this circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.Items">
+            <summary>The circles in this page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.Kind">
+            <summary>Identifies this resource as a collection of circles. Value: "plus#circleFeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.NextLink">
+            <summary>Link to the next page of circles.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.NextPageToken">
+            <summary>The continuation token, which is used to page through large result sets. Provide this value in a
+            subsequent request to return the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.SelfLink">
+            <summary>Link to this page of circles.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.Title">
+            <summary>The title of this list of resources.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CircleFeed.TotalItems">
+            <summary>The total number of circles. The number of circles in this response may be smaller due to
+            paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Actor">
+            <summary>The person who posted this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Id">
+            <summary>The ID of this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.InReplyTo">
+            <summary>The activity this comment replied to.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Kind">
+            <summary>Identifies this resource as a comment. Value: "plus#comment".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Object">
+            <summary>The object of this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Plusoners">
+            <summary>People who +1'd this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Published">
+            <summary>The time at which this comment was initially published. Formatted as an RFC 3339
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.SelfLink">
+            <summary>Link to this comment resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Updated">
+            <summary>The time at which this comment was last updated. Formatted as an RFC 3339 timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.Verb">
+            <summary>This comment's verb, indicating what action was performed. Possible values are: - "post" - Publish
+            content to the stream.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Comment.ActorData">
+            <summary>The person who posted this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ActorData.DisplayName">
+            <summary>The name of this actor, suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ActorData.Id">
+            <summary>The ID of the actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ActorData.Image">
+            <summary>The image representation of this actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ActorData.Url">
+            <summary>A link to the Person resource for this actor.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Comment.ActorData.ImageData">
+            <summary>The image representation of this actor.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ActorData.ImageData.Url">
+            <summary>The URL of the actor's profile photo. To resize the image and crop it to a square, append
+            the query string ?sz=x, where x is the dimension in pixels of each side.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.InReplyToData.Id">
+            <summary>The ID of the activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.InReplyToData.Url">
+            <summary>The URL of the activity.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Comment.ObjectData">
+            <summary>The object of this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ObjectData.Content">
+            <summary>The HTML-formatted content, suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ObjectData.ObjectType">
+            <summary>The object type of this comment. Possible values are: - "comment" - A comment in reply to an
+            activity.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.ObjectData.OriginalContent">
+            <summary>The content (text) as provided by the author, stored without any HTML formatting. When creating
+            or updating a comment, this value must be supplied as plain text in the request.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Comment.PlusonersData">
+            <summary>People who +1'd this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Comment.PlusonersData.TotalItems">
+            <summary>Total number of people who +1'd this comment.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.Id">
+            <summary>The ID of this collection of comments.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.Items">
+            <summary>The comments in this page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.Kind">
+            <summary>Identifies this resource as a collection of comments. Value: "plus#commentFeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.NextLink">
+            <summary>Link to the next page of activities.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.NextPageToken">
+            <summary>The continuation token, which is used to page through large result sets. Provide this value in a
+            subsequent request to return the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.Title">
+            <summary>The title of this collection of comments.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.CommentFeed.Updated">
+            <summary>The time at which this collection of comments was last updated. Formatted as an RFC 3339
+            timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Author">
+            <summary>The person who uploaded this media.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.DisplayName">
+            <summary>The display name for this media.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Exif">
+            <summary>Exif information of the media item.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Height">
+            <summary>The height in pixels of the original image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Id">
+            <summary>ID of this media, which is generated by the API.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Kind">
+            <summary>The type of resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.MediaUrl">
+            <summary>The URL of this photo or video's still image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Published">
+            <summary>The time at which this media was uploaded. Formatted as an RFC 3339 timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.SizeBytes">
+            <summary>The size in bytes of this video.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Streams">
+            <summary>The list of video streams for this video. There might be several different streams available for a
+            single video, either Flash or MPEG, of various sizes</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Summary">
+            <summary>A description, or caption, for this media.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Updated">
+            <summary>The time at which this media was last updated. This includes changes to media metadata. Formatted
+            as an RFC 3339 timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Url">
+            <summary>The URL for the page that hosts this media.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.VideoDuration">
+            <summary>The duration in milliseconds of this video.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.VideoStatus">
+            <summary>The encoding status of this video. Possible values are: - "PENDING" - Video not yet processed. -
+            "FAILED" - Video processing failed. - "READY" - A single video stream is playable. - "FINAL" - All video
+            streams are playable.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.Width">
+            <summary>The width in pixels of the original image.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Media.AuthorData">
+            <summary>The person who uploaded this media.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.AuthorData.DisplayName">
+            <summary>The author's name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.AuthorData.Id">
+            <summary>ID of the author.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.AuthorData.Image">
+            <summary>The author's Google profile image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.AuthorData.Url">
+            <summary>A link to the author's Google profile.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Media.AuthorData.ImageData">
+            <summary>The author's Google profile image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.AuthorData.ImageData.Url">
+            <summary>The URL of the author's profile photo. To resize the image and crop it to a square, append
+            the query string ?sz=x, where x is the dimension in pixels of each side.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Media.ExifData">
+            <summary>Exif information of the media item.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Media.ExifData.Time">
+            <summary>The time the media was captured. Formatted as an RFC 3339 timestamp.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.Items">
+            <summary>The people in this page of results. Each item includes the id, displayName, image, and url for the
+            person. To retrieve additional profile data, see the people.get method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.Kind">
+            <summary>Identifies this resource as a collection of people. Value: "plus#peopleFeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.NextPageToken">
+            <summary>The continuation token, which is used to page through large result sets. Provide this value in a
+            subsequent request to return the next page of results.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.SelfLink">
+            <summary>Link to this resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.Title">
+            <summary>The title of this collection of people.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PeopleFeed.TotalItems">
+            <summary>The total number of people available in this list. The number of people in a response might be
+            smaller due to paging. This might not be set for all collections.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.AboutMe">
+            <summary>A short biography for this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Birthday">
+            <summary>The person's date of birth, represented as YYYY-MM-DD.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.BraggingRights">
+            <summary>The "bragging rights" line of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CircledByCount">
+            <summary>If a Google+ Page and for followers who are visible, the number of people who have added this page
+            to a circle.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Cover">
+            <summary>The cover photo content.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CurrentLocation">
+            <summary>The current location for this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.DisplayName">
+            <summary>The name of this person, which is suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Gender">
+            <summary>The person's gender. Possible values include, but are not limited to, the following values: -
+            "male" - Male gender. - "female" - Female gender. - "other" - Other.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Id">
+            <summary>The ID of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Image">
+            <summary>The representation of the person's profile photo.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.IsPlusUser">
+            <summary>Whether this user has signed up for Google+.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Kind">
+            <summary>Identifies this resource as a person. Value: "plus#person".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Name">
+            <summary>An object representation of the individual components of a person's name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Nickname">
+            <summary>The nickname of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.ObjectType">
+            <summary>Type of person within Google+. Possible values include, but are not limited to, the following
+            values: - "person" - represents an actual person. - "page" - represents a page.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Organizations">
+            <summary>A list of current or past organizations with which this person is associated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.PlacesLived">
+            <summary>A list of places where this person has lived.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.PlusOneCount">
+            <summary>If a Google+ Page, the number of people who have +1'd this page.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.RelationshipStatus">
+            <summary>The person's relationship status. Possible values include, but are not limited to, the following
+            values: - "single" - Person is single. - "in_a_relationship" - Person is in a relationship. - "engaged" -
+            Person is engaged. - "married" - Person is married. - "its_complicated" - The relationship is complicated. -
+            "open_relationship" - Person is in an open relationship. - "widowed" - Person is widowed. -
+            "in_domestic_partnership" - Person is in a domestic partnership. - "in_civil_union" - Person is in a civil
+            union.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Tagline">
+            <summary>The brief description (tagline) of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Url">
+            <summary>The URL of this person's profile.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Urls">
+            <summary>A list of URLs for this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.Verified">
+            <summary>Whether the person or Google+ Page has been verified.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Person.CoverData">
+            <summary>The cover photo content.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverInfo">
+            <summary>Extra information about the cover photo.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverPhoto">
+            <summary>The person's primary cover image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.Layout">
+            <summary>The layout of the cover art. Possible values include, but are not limited to, the following
+            values: - "banner" - One large image banner.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverInfoData">
+            <summary>Extra information about the cover photo.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverInfoData.LeftImageOffset">
+            <summary>The difference between the left position of the cover image and the actual displayed cover
+            image. Only valid for banner layout.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverInfoData.TopImageOffset">
+            <summary>The difference between the top position of the cover image and the actual displayed cover
+            image. Only valid for banner layout.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverPhotoData">
+            <summary>The person's primary cover image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverPhotoData.Height">
+            <summary>The height of the image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverPhotoData.Url">
+            <summary>The URL of the image.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.CoverData.CoverPhotoData.Width">
+            <summary>The width of the image.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Person.ImageData">
+            <summary>The representation of the person's profile photo.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.ImageData.Url">
+            <summary>The URL of the person's profile photo. To resize the image and crop it to a square, append the
+            query string ?sz=x, where x is the dimension in pixels of each side.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Person.NameData">
+            <summary>An object representation of the individual components of a person's name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.FamilyName">
+            <summary>The family name (last name) of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.Formatted">
+            <summary>The full name of this person, including middle names, suffixes, etc.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.GivenName">
+            <summary>The given name (first name) of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.HonorificPrefix">
+            <summary>The honorific prefixes (such as "Dr." or "Mrs.") for this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.HonorificSuffix">
+            <summary>The honorific suffixes (such as "Jr.") for this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.NameData.MiddleName">
+            <summary>The middle name of this person.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Department">
+            <summary>The department within the organization. Deprecated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Description">
+            <summary>A short description of the person's role in this organization. Deprecated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.EndDate">
+            <summary>The date that the person left this organization.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Location">
+            <summary>The location of this organization. Deprecated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Name">
+            <summary>The name of the organization.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Primary">
+            <summary>If "true", indicates this organization is the person's primary one, which is typically
+            interpreted as the current one.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.StartDate">
+            <summary>The date that the person joined this organization.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Title">
+            <summary>The person's job title or role within the organization.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.OrganizationsData.Type">
+            <summary>The type of organization. Possible values include, but are not limited to, the following
+            values: - "work" - Work. - "school" - School.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.PlacesLivedData.Primary">
+            <summary>If "true", this place of residence is this person's primary residence.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.PlacesLivedData.Value">
+            <summary>A place where this person has lived. For example: "Seattle, WA", "Near Toronto".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.UrlsData.Label">
+            <summary>The label of the URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.UrlsData.Type">
+            <summary>The type of URL. Possible values include, but are not limited to, the following values: -
+            "otherProfile" - URL for another profile. - "contributor" - URL to a site for which this person is a
+            contributor. - "website" - URL for this Google+ Page's primary website. - "other" - Other URL.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Person.UrlsData.Value">
+            <summary>The URL value.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.Address">
+            <summary>The physical address of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.DisplayName">
+            <summary>The display name of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.Kind">
+            <summary>Identifies this resource as a place. Value: "plus#place".</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.Position">
+            <summary>The position of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Place.AddressData">
+            <summary>The physical address of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.AddressData.Formatted">
+            <summary>The formatted address for display.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.Data.Place.PositionData">
+            <summary>The position of the place.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.PositionData.Latitude">
+            <summary>The latitude of this position.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Place.PositionData.Longitude">
+            <summary>The longitude of this position.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PlusAclentryResource.DisplayName">
+            <summary>A descriptive name for this entry. Suitable for display.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PlusAclentryResource.Id">
+            <summary>The ID of the entry. For entries of type "person" or "circle", this is the ID of the resource. For
+            other types, this property is not set.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PlusAclentryResource.Type">
+            <summary>The type of entry describing to whom access is granted. Possible values are: - "person" - Access to
+            an individual. - "circle" - Access to members of a circle. - "myCircles" - Access to members of all the
+            person's circles. - "extendedCircles" - Access to members of all the person's circles, plus all of the
+            people in their circles. - "domain" - Access to members of the person's Google Apps domain. - "public" -
+            Access to anyone on the web.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.PlusAclentryResource.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Videostream.Height">
+            <summary>The height, in pixels, of the video resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Videostream.Type">
+            <summary>MIME type of the video stream.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Videostream.Url">
+            <summary>URL of the video stream.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Videostream.Width">
+            <summary>The width, in pixels, of the video resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.Data.Videostream.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PlusService">
+            <summary>The Plus Service.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PlusService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PlusService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Activities">
+            <summary>Gets the Activities resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Audiences">
+            <summary>Gets the Audiences resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Circles">
+            <summary>Gets the Circles resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Comments">
+            <summary>Gets the Comments resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.Media">
+            <summary>Gets the Media resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusService.People">
+            <summary>Gets the People resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PlusService.Scopes">
+            <summary>Available OAuth 2.0 scopes for use with the Google+ API.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusCirclesRead">
+            <summary>View your circles and the people and pages in them</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusCirclesWrite">
+            <summary>Manage your circles and add people and pages, who will be notified and may appear on your
+            public Google+ profile</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusLogin">
+            <summary>Know your name, basic info, and list of people you're connected to on Google+</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusMe">
+            <summary>Know who you are on Google</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusMediaUpload">
+            <summary>Send your photos and videos to Google+</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusProfilesRead">
+            <summary>View your own Google+ profile and profiles visible to you</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusStreamRead">
+            <summary>View your Google+ posts, comments, and stream</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusService.Scopes.PlusStreamWrite">
+            <summary>Manage your Google+ posts, comments, and stream</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1">
+            <summary>A base abstract class for Plus requests.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new PlusBaseServiceRequest instance.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.InitParameters">
+            <summary>Initializes Plus parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.Alt">
+            <summary>Data format for the response.</summary>
+            [default: json]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.UserIp">
+            <summary>IP address of the site where the request originates. Use this if you want to enforce per-user
+            limits.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PlusBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.ActivitiesResource">
+            <summary>The "activities" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.ActivitiesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.Get(System.String)">
+            <summary>Get an activity.</summary>
+            <param name="activityId">The ID of the activity to get.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.Insert(Google.Apis.Plus.v1domains.Data.Activity,System.String)">
+            <summary>Create a new activity for the authenticated user.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="userId">The ID of the user to create the activity on behalf of. Its value should be "me", to indicate
+            the authenticated user.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.List(System.String,Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.CollectionEnum)">
+            <summary>List all of the activities in the specified collection for a particular user.</summary>
+            <param name="userId">The ID of the user to get activities for. The special value "me" can be used to indicate the
+            authenticated user.</param>
+            <param name="collection">The collection of activities to list.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest">
+            <summary>Get an activity.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.ActivityId">
+            <summary>The ID of the activity to get.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest">
+            <summary>Create a new activity for the authenticated user.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Activity,System.String)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.UserId">
+            <summary>The ID of the user to create the activity on behalf of. Its value should be "me", to indicate
+            the authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.Preview">
+            <summary>If "true", extract the potential media attachments for a URL. The response will include all
+            possible attachments for a URL, including video, photos, and articles based on the content of the
+            page.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest">
+            <summary>List all of the activities in the specified collection for a particular user.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String,Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.CollectionEnum)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.UserId">
+            <summary>The ID of the user to get activities for. The special value "me" can be used to indicate the
+            authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.Collection">
+            <summary>The collection of activities to list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.MaxResults">
+            <summary>The maximum number of activities to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.CollectionEnum">
+            <summary>The collection of activities to list.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.ActivitiesResource.ListRequest.CollectionEnum.User">
+            <summary>All activities created by the specified user that the authenticated user is authorized to
+            view.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.AudiencesResource">
+            <summary>The "audiences" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.AudiencesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.AudiencesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.AudiencesResource.List(System.String)">
+            <summary>List all of the audiences to which a user can share.</summary>
+            <param name="userId">The ID of the user to get audiences for. The special value "me" can be used to indicate the
+            authenticated user.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest">
+            <summary>List all of the audiences to which a user can share.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.UserId">
+            <summary>The ID of the user to get audiences for. The special value "me" can be used to indicate the
+            authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.MaxResults">
+            <summary>The maximum number of circles to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.AudiencesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource">
+            <summary>The "circles" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.CirclesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.AddPeople(System.String)">
+            <summary>Add a person to a circle. Google+ limits certain circle operations, including the number of circle
+            adds. Learn More.</summary>
+            <param name="circleId">The ID of the circle to add the person to.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.Get(System.String)">
+            <summary>Get a circle.</summary>
+            <param name="circleId">The ID of the circle to get.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.Insert(Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Create a new circle for the authenticated user.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="userId">The ID of the user to create the circle on behalf of. The value "me" can be used to indicate
+            the authenticated user.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.List(System.String)">
+            <summary>List all of the circles for a user.</summary>
+            <param name="userId">The ID of the user to get circles for. The special value "me" can be used to indicate the
+            authenticated user.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.Patch(Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Update a circle's description. This method supports patch semantics.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="circleId">The ID of the circle to update.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.Remove(System.String)">
+            <summary>Delete a circle.</summary>
+            <param name="circleId">The ID of the circle to delete.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.RemovePeople(System.String)">
+            <summary>Remove a person from a circle.</summary>
+            <param name="circleId">The ID of the circle to remove the person from.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.Update(Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Update a circle's description.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="circleId">The ID of the circle to update.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest">
+            <summary>Add a person to a circle. Google+ limits certain circle operations, including the number of circle
+            adds. Learn More.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new AddPeople request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.InitParameters">
+            <summary>Initializes AddPeople parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.CircleId">
+            <summary>The ID of the circle to add the person to.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.UserId">
+            <summary>IDs of the people to add to the circle. Optional, can be repeated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.Email">
+            <summary>Email of the people to add to the circle. Optional, can be repeated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.AddPeopleRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.GetRequest">
+            <summary>Get a circle.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.CircleId">
+            <summary>The ID of the circle to get.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest">
+            <summary>Create a new circle for the authenticated user.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.UserId">
+            <summary>The ID of the user to create the circle on behalf of. The value "me" can be used to indicate
+            the authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.ListRequest">
+            <summary>List all of the circles for a user.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.UserId">
+            <summary>The ID of the user to get circles for. The special value "me" can be used to indicate the
+            authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.MaxResults">
+            <summary>The maximum number of circles to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest">
+            <summary>Update a circle's description. This method supports patch semantics.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Constructs a new Patch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.InitParameters">
+            <summary>Initializes Patch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.CircleId">
+            <summary>The ID of the circle to update.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.PatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest">
+            <summary>Delete a circle.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Remove request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.InitParameters">
+            <summary>Initializes Remove parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.CircleId">
+            <summary>The ID of the circle to delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemoveRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest">
+            <summary>Remove a person from a circle.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new RemovePeople request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.InitParameters">
+            <summary>Initializes RemovePeople parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.CircleId">
+            <summary>The ID of the circle to remove the person from.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.UserId">
+            <summary>IDs of the people to remove from the circle. Optional, can be repeated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.Email">
+            <summary>Email of the people to add to the circle. Optional, can be repeated.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.RemovePeopleRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest">
+            <summary>Update a circle's description.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Circle,System.String)">
+            <summary>Constructs a new Update request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.InitParameters">
+            <summary>Initializes Update parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.CircleId">
+            <summary>The ID of the circle to update.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CirclesResource.UpdateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CommentsResource">
+            <summary>The "comments" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.CommentsResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.Get(System.String)">
+            <summary>Get a comment.</summary>
+            <param name="commentId">The ID of the comment to get.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.Insert(Google.Apis.Plus.v1domains.Data.Comment,System.String)">
+            <summary>Create a new comment in reply to an activity.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="activityId">The ID of the activity to reply to.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.List(System.String)">
+            <summary>List all of the comments for an activity.</summary>
+            <param name="activityId">The ID of the activity to get comments for.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CommentsResource.GetRequest">
+            <summary>Get a comment.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.CommentId">
+            <summary>The ID of the comment to get.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest">
+            <summary>Create a new comment in reply to an activity.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Comment,System.String)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.ActivityId">
+            <summary>The ID of the activity to reply to.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CommentsResource.ListRequest">
+            <summary>List all of the comments for an activity.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.ActivityId">
+            <summary>The ID of the activity to get comments for.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.SortOrder">
+            <summary>The order in which to sort the list of comments.</summary>
+            [default: ascending]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.MaxResults">
+            <summary>The maximum number of comments to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 0]
+            [maximum: 500]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.SortOrderEnum">
+            <summary>The order in which to sort the list of comments.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.SortOrderEnum.Ascending">
+            <summary>Sort oldest comments first.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.CommentsResource.ListRequest.SortOrderEnum.Descending">
+            <summary>Sort newest comments first.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.MediaResource">
+            <summary>The "media" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.MediaResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.Insert(Google.Apis.Plus.v1domains.Data.Media,System.String,Google.Apis.Plus.v1domains.MediaResource.InsertRequest.CollectionEnum)">
+            <summary>Add a new media item to an album. The current upload size limitations are 36MB for a photo and 1GB
+            for a video. Uploads do not count against quota if photos are less than 2048 pixels on their longest side or
+            videos are less than 15 minutes in length.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="userId">The ID of the user to create the activity on behalf of.</param>
+            <param
+            name="collection"></param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.Insert(Google.Apis.Plus.v1domains.Data.Media,System.String,Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.CollectionEnum,System.IO.Stream,System.String)">
+            <summary>Add a new media item to an album. The current upload size limitations are 36MB for a photo and 1GB
+            for a video. Uploads do not count against quota if photos are less than 2048 pixels on their longest side or
+            videos are less than 15 minutes in length.</summary>/// <param name="body">The body of the request.</param>
+            <param name="userId">The ID of the user to create the activity on behalf of.</param>
+            <param
+            name="collection"></param>
+            <param name="stream">The stream to upload.</param>
+            <param name="contentType">The content type of the stream to upload.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.MediaResource.InsertRequest">
+            <summary>Add a new media item to an album. The current upload size limitations are 36MB for a photo and 1GB
+            for a video. Uploads do not count against quota if photos are less than 2048 pixels on their longest side or
+            videos are less than 15 minutes in length.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Media,System.String,Google.Apis.Plus.v1domains.MediaResource.InsertRequest.CollectionEnum)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.UserId">
+            <summary>The ID of the user to create the activity on behalf of.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.MediaResource.InsertRequest.CollectionEnum.Cloud">
+            <summary>Upload the media to share on Google+.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload">
+            <summary>Insert media upload which supports resumable upload.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.#ctor(Google.Apis.Services.IClientService,Google.Apis.Plus.v1domains.Data.Media,System.String,Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.CollectionEnum,System.IO.Stream,System.String)">
+            <summary>Constructs a new Insert media upload instance.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.Alt">
+            <summary>Data format for the response.</summary>
+            [default: json]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and
+            reports. Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters. Overrides userIp if both are
+            provided.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.UserIp">
+            <summary>IP address of the site where the request originates. Use this if you want to enforce per-user
+            limits.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.UserId">
+            <summary>The ID of the user to create the activity on behalf of.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.MediaResource.InsertMediaUpload.CollectionEnum.Cloud">
+            <summary>Upload the media to share on Google+.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource">
+            <summary>The "people" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.Get(System.String)">
+            <summary>Get a person's profile.</summary>
+            <param name="userId">The ID of the person to get the profile for. The special value "me" can be used to indicate the
+            authenticated user.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.List(System.String,Google.Apis.Plus.v1domains.PeopleResource.ListRequest.CollectionEnum)">
+            <summary>List all of the people in the specified collection.</summary>
+            <param name="userId">Get the collection of people for the person identified. Use "me" to indicate the authenticated
+            user.</param>
+            <param name="collection">The collection of people to list.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByActivity(System.String,Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum)">
+            <summary>List all of the people in the specified collection for a particular activity.</summary>
+            <param name="activityId">The ID of the activity to get the list of people for.</param>
+            <param
+            name="collection">The collection of people to list.</param>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByCircle(System.String)">
+            <summary>List all of the people who are members of a circle.</summary>
+            <param name="circleId">The ID of the circle to get the members of.</param>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.GetRequest">
+            <summary>Get a person's profile.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.UserId">
+            <summary>The ID of the person to get the profile for. The special value "me" can be used to indicate the
+            authenticated user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListRequest">
+            <summary>List all of the people in the specified collection.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String,Google.Apis.Plus.v1domains.PeopleResource.ListRequest.CollectionEnum)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.UserId">
+            <summary>Get the collection of people for the person identified. Use "me" to indicate the authenticated
+            user.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.Collection">
+            <summary>The collection of people to list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.OrderBy">
+            <summary>The order to return people in.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.MaxResults">
+            <summary>The maximum number of people to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 100]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.CollectionEnum">
+            <summary>The collection of people to list.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.CollectionEnum.Circled">
+            <summary>The list of people who this user has added to one or more circles.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.OrderByEnum">
+            <summary>The order to return people in.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.OrderByEnum.Alphabetical">
+            <summary>Order the people by their display name.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListRequest.OrderByEnum.Best">
+            <summary>Order people based on the relevence to the viewer.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest">
+            <summary>List all of the people in the specified collection for a particular activity.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.#ctor(Google.Apis.Services.IClientService,System.String,Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum)">
+            <summary>Constructs a new ListByActivity request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.InitParameters">
+            <summary>Initializes ListByActivity parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.ActivityId">
+            <summary>The ID of the activity to get the list of people for.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.Collection">
+            <summary>The collection of people to list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.MaxResults">
+            <summary>The maximum number of people to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum">
+            <summary>The collection of people to list.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum.Plusoners">
+            <summary>List all people who have +1'd this activity.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum.Resharers">
+            <summary>List all people who have reshared this activity.</summary>
+        </member>
+        <member name="F:Google.Apis.Plus.v1domains.PeopleResource.ListByActivityRequest.CollectionEnum.Sharedto">
+            <summary>List all people who this activity was shared to.</summary>
+        </member>
+        <member name="T:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest">
+            <summary>List all of the people who are members of a circle.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new ListByCircle request.</summary>
+        </member>
+        <member name="M:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.InitParameters">
+            <summary>Initializes ListByCircle parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.CircleId">
+            <summary>The ID of the circle to get the members of.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.PageToken">
+            <summary>The continuation token, which is used to page through large result sets. To get the next page
+            of results, set this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.MaxResults">
+            <summary>The maximum number of people to include in the response, which is used for paging. For any
+            response, the actual number returned might be less than the specified maxResults.</summary>
+            [default: 20]
+            [minimum: 1]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Plus.v1domains.PeopleResource.ListByCircleRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+    </members>
+</doc>

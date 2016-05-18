@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "googleCalender", "googleCalender\googleCalender.csproj", "{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AFED3323-E1AA-48ED-B5AC-24563334129E} = {AFED3323-E1AA-48ED-B5AC-24563334129E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "googleCalendarLibrary", "googleCalendarLibrary\googleCalendarLibrary.csproj", "{AFED3323-E1AA-48ED-B5AC-24563334129E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{D533E63E-3D9E-4BE1-B181-3295C2890E1C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.154:8080/tfs/test
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = googleCalendarLibrary\\googleCalendarLibrary.csproj
+		SccProjectName1 = googleCalendarLibrary
+		SccLocalPath1 = googleCalendarLibrary
+		SccProjectUniqueName2 = googleCalender\\googleCalender.csproj
+		SccProjectName2 = googleCalender
+		SccLocalPath2 = googleCalender
+		SccProjectUniqueName3 = UnitTestProject2\\UnitTestProject2.csproj
+		SccProjectName3 = UnitTestProject2
+		SccLocalPath3 = UnitTestProject2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Debug|Any CPU.Build.0 = Debug|x86
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Debug|x86.ActiveCfg = Debug|x86
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Debug|x86.Build.0 = Debug|x86
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Release|x86.ActiveCfg = Release|x86
+		{64057E54-E3F6-4D2A-8F5D-7894B4E85EF3}.Release|x86.Build.0 = Release|x86
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFED3323-E1AA-48ED-B5AC-24563334129E}.Release|x86.ActiveCfg = Release|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D533E63E-3D9E-4BE1-B181-3295C2890E1C}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UnitTestProject2" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="googleServicePriveKeyFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Coooper-d3d1343328a5.p12</Value>
+    </Setting>
+    <Setting Name="googleProjectName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Coooper</Value>
+    </Setting>
+    <Setting Name="googleServiceEmailAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">827908933247-5r318c5v1thiae3tdfvemq85qi6csonb@developer.gserviceaccount.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

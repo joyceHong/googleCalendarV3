@@ -1,0 +1,5 @@
+D:\joyce\103\googleCalender\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\joyce\103\googleCalender\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\joyce\103\googleCalender\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\joyce\103\googleCalender\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\joyce\103\googleCalender\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

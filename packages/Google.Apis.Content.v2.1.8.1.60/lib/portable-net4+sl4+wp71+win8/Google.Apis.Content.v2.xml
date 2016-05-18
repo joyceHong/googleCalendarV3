@@ -1,0 +1,2240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.Content.v2</name>
+    </assembly>
+    <members>
+        <member name="P:Google.Apis.Content.v2.Data.Account.AdultContent">
+            <summary>Indicates whether the merchant sells adult content.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.AdwordsLinks">
+            <summary>List of linked AdWords accounts.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.Id">
+            <summary>Merchant Center account ID.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string "content#account".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.Name">
+            <summary>Display name for the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.ReviewsUrl">
+            <summary>URL for individual seller reviews, i.e., reviews for each child account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.SellerId">
+            <summary>Client-specific, locally-unique, internal ID for the child account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.Users">
+            <summary>Users with access to the account. Every account (except for subaccounts) must have at least one
+            admin user.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.WebsiteUrl">
+            <summary>The merchant's website.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Account.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountAdwordsLink.AdwordsId">
+            <summary>Customer ID of the AdWords account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountAdwordsLink.Status">
+            <summary>Status of the link between this Merchant Center account and the AdWords account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountAdwordsLink.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountStatus">
+            <summary>The status of an account, i.e., information about its products, which is computed offline and not
+            returned immediately at insertion time.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatus.AccountId">
+            <summary>The ID of the account for which the status is reported.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatus.DataQualityIssues">
+            <summary>A list of data quality issues.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatus.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountStatus".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatus.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.Country">
+            <summary>Country for which this issue is reported.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.DisplayedValue">
+            <summary>Actual value displayed on the landing page.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.ExampleItems">
+            <summary>Example items featuring the issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.Id">
+            <summary>Issue identifier.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.LastChecked">
+            <summary>Last time the account was checked for this issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.NumItems">
+            <summary>Number of items in the account found to have the said issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.Severity">
+            <summary>Severity of the problem.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.SubmittedValue">
+            <summary>Submitted value that causes the issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusDataQualityIssue.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountStatusExampleItem">
+            <summary>An example of an item that has poor data quality. An item value on the landing page differs from what
+            is submitted, or conflicts with a policy.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.ItemId">
+            <summary>Unique item ID as specified in the uploaded product data.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.Link">
+            <summary>Landing page of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.SubmittedValue">
+            <summary>The item value that was submitted.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.Title">
+            <summary>Title of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.ValueOnLandingPage">
+            <summary>The actual value on the landing page.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountStatusExampleItem.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountUser.Admin">
+            <summary>Whether user is an admin.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountUser.EmailAddress">
+            <summary>User's email address.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountUser.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the accounts service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.Account">
+            <summary>The account to create or update. Only defined if the method is insert or update.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.AccountId">
+            <summary>The ID of the account to get or delete. Only defined if the method is get or delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.Method">
+            <summary>The method (get, insert, update, or delete).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountsCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the accounts service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry.Account">
+            <summary>The retrieved, created, or updated account. Not defined if the method was delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountsCustomBatchResponseEntry".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountsListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountsListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the accountstatuses service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry.AccountId">
+            <summary>The ID of the (sub-)account whose status to get.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry.Method">
+            <summary>The method (get).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountstatusesCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the accountstatuses service of the Content API
+            for Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponseEntry.AccountStatus">
+            <summary>The requested account status. Defined if and only if the request was successful.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#accountstatusesListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.AccountstatusesListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.AttributeLanguage">
+            <summary>The two-letter ISO 639-1 language in which the attributes are defined in the data feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.ContentLanguage">
+            <summary>The two-letter ISO 639-1 language of the items in the feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.ContentType">
+            <summary>The type of data feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.FetchSchedule">
+            <summary>Fetch schedule for the feed file.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.FileName">
+            <summary>The filename of the feed. All feeds must have a unique file name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.Format">
+            <summary>Format of the feed file.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.Id">
+            <summary>The ID of the data feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.IntendedDestinations">
+            <summary>The list of intended destinations (corresponds to checked check boxes in Merchant
+            Center).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string "content#datafeed".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.Name">
+            <summary>A descriptive name of the data feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.TargetCountry">
+            <summary>The two-letter ISO 3166 country where the items in the feed will be included in the search
+            index.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Datafeed.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedFetchSchedule">
+            <summary>The required fields vary based on the frequency of fetching. For a monthly fetch schedule, day_of_month
+            and hour are required. For a weekly fetch schedule, weekday and hour are required. For a daily fetch schedule,
+            only hour is required.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.DayOfMonth">
+            <summary>The day of the month the feed file should be fetched (1-31).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.FetchUrl">
+            <summary>The URL where the feed file can be fetched. Google Merchant Center will support automatic scheduled
+            uploads using the HTTP, HTTPS, FTP, or SFTP protocols, so the value will need to be a valid link using one
+            of those four protocols.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.Hour">
+            <summary>The hour of the day the feed file should be fetched (0-24).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.Password">
+            <summary>An optional password for fetch_url.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.TimeZone">
+            <summary>Time zone used for schedule. UTC by default. E.g., "America/Los_Angeles".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.Username">
+            <summary>An optional user name for fetch_url.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.Weekday">
+            <summary>The day of the week the feed file should be fetched.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFetchSchedule.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFormat.ColumnDelimiter">
+            <summary>Delimiter for the separation of values in a delimiter-separated values feed. If not specified, the
+            delimiter will be auto-detected. Ignored for non-DSV data feeds.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFormat.FileEncoding">
+            <summary>Character encoding scheme of the data feed. If not specified, the encoding will be auto-
+            detected.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFormat.QuotingMode">
+            <summary>Specifies how double quotes are interpreted. If not specified, the mode will be auto-detected.
+            Ignored for non-DSV data feeds.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedFormat.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.DatafeedId">
+            <summary>The ID of the feed for which the status is reported.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.Errors">
+            <summary>The list of errors occurring in the feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.ItemsTotal">
+            <summary>The number of items in the feed that were processed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.ItemsValid">
+            <summary>The number of items in the feed that were valid.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedStatus".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.ProcessingStatus">
+            <summary>The processing status of the feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.Warnings">
+            <summary>The list of errors occurring in the feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatus.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedStatusError">
+            <summary>An error occurring in the feed, like "invalid price".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusError.Code">
+            <summary>The code of the error, e.g., "validation/invalid_value".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusError.Count">
+            <summary>The number of occurrences of the error in the feed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusError.Examples">
+            <summary>A list of example occurrences of the error, grouped by product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusError.Message">
+            <summary>The error message, e.g., "Invalid price".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusError.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedStatusExample">
+            <summary>An example occurrence for a particular error.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusExample.ItemId">
+            <summary>The ID of the example item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusExample.LineNumber">
+            <summary>Line number in the data feed where the example is found.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusExample.Value">
+            <summary>The problematic value.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedStatusExample.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the datafeeds service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.Datafeed">
+            <summary>The data feed to insert.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.DatafeedId">
+            <summary>The ID of the data feed to get or delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.Method">
+            <summary>The method (get, insert, update, or delete).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the datafeeds service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponseEntry.Datafeed">
+            <summary>The requested data feed. Defined if and only if the request was successful.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsGetResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsGetResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsGetResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsInsertRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsInsertResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsInsertResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsInsertResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsUpdateRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsUpdateResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedsUpdateResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedsUpdateResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedstatusesBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the datafeedstatuses service of the Content API
+            for Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry.DatafeedId">
+            <summary>The ID of the data feed to get or delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry.Method">
+            <summary>The method (get).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedstatusesCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the datafeedstatuses service of the Content API
+            for Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponseEntry.DatafeedStatus">
+            <summary>The requested data feed status. Defined if and only if the request was successful.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesGetResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedstatusesGetResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesGetResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#datafeedstatusesListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.DatafeedstatusesListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.Error">
+            <summary>An error returned by the API.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Error.Domain">
+            <summary>The domain of the error.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Error.Message">
+            <summary>A description of the error.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Error.Reason">
+            <summary>The error code.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Error.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.Errors">
+            <summary>A list of errors returned by a failed batch entry.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Errors.Code">
+            <summary>The HTTP status of the first error in errors.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Errors.ErrorsValue">
+            <summary>A list of errors.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Errors.Message">
+            <summary>The message of the first error in errors.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Errors.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.Availability">
+            <summary>The availability of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string "content#inventory".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.Price">
+            <summary>The price of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.Quantity">
+            <summary>The quantity of the product. Must be equal to or greater than zero. Supported only for local
+            products.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.SalePrice">
+            <summary>The sale price of the product. Mandatory if sale_price_effective_date is defined.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.SalePriceEffectiveDate">
+            <summary>A date range represented by a pair of ISO 8601 dates separated by a space, comma, or slash. Both
+            dates might be specified as 'null' if undecided.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Inventory.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the inventory service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.Inventory">
+            <summary>Price and availability of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.ProductId">
+            <summary>The ID of the product for which to update price and availability.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.StoreCode">
+            <summary>The code of the store for which to update price and availability. Use online to update price and
+            availability of an online product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#inventoryCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.InventoryCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the inventory service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponseEntry.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#inventoryCustomBatchResponseEntry".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventoryCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.Availability">
+            <summary>The availability of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.Price">
+            <summary>The price of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.Quantity">
+            <summary>The quantity of the product. Must be equal to or greater than zero. Supported only for local
+            products.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.SalePrice">
+            <summary>The sale price of the product. Mandatory if sale_price_effective_date is defined.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.SalePriceEffectiveDate">
+            <summary>A date range represented by a pair of ISO 8601 dates separated by a space, comma, or slash. Both
+            dates might be specified as 'null' if undecided.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#inventorySetResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.InventorySetResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.LoyaltyPoints.Name">
+            <summary>Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or
+            24 Roman characters.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.LoyaltyPoints.PointsValue">
+            <summary>The retailer's loyalty points in absolute value.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.LoyaltyPoints.Ratio">
+            <summary>The ratio of a point when converted to currency. Google assumes currency based on Merchant Center
+            settings. If ratio is left out, it defaults to 1.0.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.LoyaltyPoints.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Price.Currency">
+            <summary>The currency of the price.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Price.Value">
+            <summary>The price represented as a number.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Price.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.Product">
+            <summary>Product data.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AdditionalImageLinks">
+            <summary>Additional URLs of images of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Adult">
+            <summary>Set to true if the item is targeted towards adults.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AdwordsGrouping">
+            <summary>Used to group items in an arbitrary way. Only for CPA%, discouraged otherwise.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AdwordsLabels">
+            <summary>Similar to adwords_grouping, but only works on CPC.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AdwordsRedirect">
+            <summary>Allows advertisers to override the item URL when the product is shown within the context of Product
+            Ads.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AgeGroup">
+            <summary>Target age group of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Availability">
+            <summary>Availability status of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.AvailabilityDate">
+            <summary>The day a pre-ordered product becomes available for delivery.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Brand">
+            <summary>Brand of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Channel">
+            <summary>The item's channel (online or local).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Color">
+            <summary>Color of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Condition">
+            <summary>Condition or state of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ContentLanguage">
+            <summary>The two-letter ISO 639-1 language code for the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomAttributes">
+            <summary>A list of custom (merchant-provided) attributes.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomGroups">
+            <summary>A list of custom (merchant-provided) custom attribute groups.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomLabel0">
+            <summary>Custom label 0 for custom grouping of items in a Shopping campaign.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomLabel1">
+            <summary>Custom label 1 for custom grouping of items in a Shopping campaign.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomLabel2">
+            <summary>Custom label 2 for custom grouping of items in a Shopping campaign.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomLabel3">
+            <summary>Custom label 3 for custom grouping of items in a Shopping campaign.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.CustomLabel4">
+            <summary>Custom label 4 for custom grouping of items in a Shopping campaign.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Description">
+            <summary>Description of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Destinations">
+            <summary>Specifies the intended destinations for the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.EnergyEfficiencyClass">
+            <summary>The energy efficiency class as defined in EU directive 2010/30/EU.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ExpirationDate">
+            <summary>Date that an item will expire.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Gender">
+            <summary>Target gender of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.GoogleProductCategory">
+            <summary>Google's category of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Gtin">
+            <summary>Global Trade Item Number (GTIN) of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Id">
+            <summary>The REST id of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.IdentifierExists">
+            <summary>False when the item does not have unique product identifiers appropriate to its category, such as
+            GTIN, MPN, and brand. Required according to the Unique Product Identifier Rules for all target countries
+            except for Canada.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ImageLink">
+            <summary>URL of an image of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Installment">
+            <summary>Number and amount of installments to pay for an item. Brazil only.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.IsBundle">
+            <summary>Whether the item is a merchant-defined bundle. A bundle is a custom grouping of different products
+            sold by a merchant for a single price.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ItemGroupId">
+            <summary>Shared identifier for all variants of the same product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string "content#product".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Link">
+            <summary>URL directly linking to your item's page on your website.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.LoyaltyPoints">
+            <summary>Loyalty points that users receive after purchasing the item. Japan only.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Material">
+            <summary>The material of which the item is made.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.MerchantMultipackQuantity">
+            <summary>The number of identical products in a merchant-defined multipack.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.MobileLink">
+            <summary>Link to a mobile-optimized version of the landing page.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Mpn">
+            <summary>Manufacturer Part Number (MPN) of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.OfferId">
+            <summary>An identifier of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.OnlineOnly">
+            <summary>Whether an item is available for purchase only online.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Pattern">
+            <summary>The item's pattern (e.g. polka dots).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Price">
+            <summary>Price of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ProductType">
+            <summary>Your category of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.SalePrice">
+            <summary>Advertised sale price of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.SalePriceEffectiveDate">
+            <summary>Date range during which the item is on sale.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Shipping">
+            <summary>Shipping rules.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ShippingWeight">
+            <summary>Weight of the item for shipping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.SizeSystem">
+            <summary>System in which the size is specified. Recommended for apparel items.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.SizeType">
+            <summary>The cut of the item. Recommended for apparel items.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Sizes">
+            <summary>Size of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.TargetCountry">
+            <summary>The two-letter ISO 3166 country code for the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Taxes">
+            <summary>Tax information.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Title">
+            <summary>Title of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.UnitPricingBaseMeasure">
+            <summary>The preference of the denominator of the unit price.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.UnitPricingMeasure">
+            <summary>The measure and dimension of an item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ValidatedDestinations">
+            <summary>The read-only list of intended destinations which passed validation.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.Warnings">
+            <summary>Read-only warnings.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.Product.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomAttribute.Name">
+            <summary>The name of the attribute.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomAttribute.Type">
+            <summary>The type of the attribute.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomAttribute.Unit">
+            <summary>Free-form unit of the attribute. Unit can only be used for values of type INT or FLOAT.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomAttribute.Value">
+            <summary>The value of the attribute.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomAttribute.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomGroup.Attributes">
+            <summary>The sub-attributes.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomGroup.Name">
+            <summary>The name of the group.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductCustomGroup.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductDestination.DestinationName">
+            <summary>The name of the destination.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductDestination.Intention">
+            <summary>Whether the destination is required, excluded or should be validated.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductDestination.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductInstallment.Amount">
+            <summary>The amount the buyer has to pay per month.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductInstallment.Months">
+            <summary>The number of installments the buyer has to pay.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductInstallment.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShipping.Country">
+            <summary>The two-letter ISO 3166 country code for the country to which an item will ship.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShipping.Price">
+            <summary>Fixed shipping price, represented as a number.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShipping.Region">
+            <summary>The geographic region to which a shipping rate applies (e.g. zip code).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShipping.Service">
+            <summary>A free-form description of the service class or delivery speed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShipping.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShippingWeight.Unit">
+            <summary>The unit of value.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShippingWeight.Value">
+            <summary>The weight of the product used to calculate the shipping cost of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductShippingWeight.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.ProductStatus">
+            <summary>The status of a product, i.e., information about a product computed asynchronously by the data quality
+            analysis.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.DataQualityIssues">
+            <summary>A list of data quality issues associated with the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.DestinationStatuses">
+            <summary>The intended destinations for the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productStatus".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.Link">
+            <summary>The link to the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.ProductId">
+            <summary>The id of the product for which status is reported.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.Title">
+            <summary>The title of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatus.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.Detail">
+            <summary>A more detailed error string.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.FetchStatus">
+            <summary>The fetch status for landing_page_errors.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.Id">
+            <summary>The id of the data quality issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.Location">
+            <summary>The attribute name that is relevant for the issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.Timestamp">
+            <summary>The time stamp of the data quality issue.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.ValueOnLandingPage">
+            <summary>The value of that attribute that was found on the landing page</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.ValueProvided">
+            <summary>The value the attribute had at time of evaluation.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDataQualityIssue.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDestinationStatus.ApprovalStatus">
+            <summary>The destination's approval status.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDestinationStatus.Destination">
+            <summary>The name of the destination</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDestinationStatus.Intention">
+            <summary>Whether the destination is required, excluded, selected by default or should be
+            validated.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductStatusDestinationStatus.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductTax.Country">
+            <summary>The country within which the item is taxed, specified with a two-letter ISO 3166 country
+            code.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductTax.Rate">
+            <summary>The percentage of tax rate that applies to the item price.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductTax.Region">
+            <summary>The geographic region to which the tax rate applies.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductTax.TaxShip">
+            <summary>Set to true if tax is charged on shipping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductTax.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the products service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.Method">
+            <summary>The method (get, insert or delete).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.Product">
+            <summary>The product to insert. Only required if the method is insert.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.ProductId">
+            <summary>The ID of the product to get or delete. Only defined if the method is get or delete.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productsCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the products service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry.Errors">
+            <summary>A list of errors defined if and only if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productsCustomBatchResponseEntry".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry.Product">
+            <summary>The inserted product. Only defined if the method is insert and if the request was
+            successful.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productsListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductsListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequest.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry">
+            <summary>A batch entry encoding a single non-batch request to the productstatuses service of the Content API for
+            Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry.BatchId">
+            <summary>An entry ID, unique within the batch request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry.Method">
+            <summary>The method (get).</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry.ProductId">
+            <summary>The ID of the product whose status to get.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequestEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productstatusesCustomBatchResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry">
+            <summary>A batch entry encoding a single non-batch response from the productstatuses service of the Content API
+            for Shopping.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry.BatchId">
+            <summary>The ID of the request entry this entry responds to.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry.Errors">
+            <summary>A list of errors, if the request failed.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productstatusesCustomBatchResponseEntry".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry.ProductStatus">
+            <summary>The requested product status. Only defined if the request was successful.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesCustomBatchResponseEntry.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesListResponse.Kind">
+            <summary>Identifies what kind of resource this is. Value: the fixed string
+            "content#productstatusesListResponse".</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.Data.ProductstatusesListResponse.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ContentService">
+            <summary>The Content Service.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ContentService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ContentService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ContentService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ContentService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Accounts">
+            <summary>Gets the Accounts resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Accountstatuses">
+            <summary>Gets the Accountstatuses resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Datafeeds">
+            <summary>Gets the Datafeeds resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Datafeedstatuses">
+            <summary>Gets the Datafeedstatuses resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Inventory">
+            <summary>Gets the Inventory resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Products">
+            <summary>Gets the Products resource.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentService.Productstatuses">
+            <summary>Gets the Productstatuses resource.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ContentService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Content API for Shopping.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ContentService.Scope.Content">
+            <summary>Manage your product listings and accounts for Google Shopping</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ContentBaseServiceRequest`1">
+            <summary>A base abstract class for Content requests.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ContentBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new ContentBaseServiceRequest instance.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ContentBaseServiceRequest`1.InitParameters">
+            <summary>Initializes Content parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.Alt">
+            <summary>Data format for the response.</summary>
+            [default: json]
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ContentBaseServiceRequest`1.UserIp">
+            <summary>IP address of the site where the request originates. Use this if you want to enforce per-user
+            limits.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ContentBaseServiceRequest`1.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ContentBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource">
+            <summary>The "accounts" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.AccountsResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Custombatch(Google.Apis.Content.v2.Data.AccountsCustomBatchRequest)">
+            <summary>Retrieves, inserts, updates, and deletes multiple Merchant Center (sub-)accounts in a single
+            request.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Delete(System.UInt64,System.UInt64)">
+            <summary>Deletes a Merchant Center sub-account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="accountId">The ID of the
+            account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Get(System.UInt64,System.UInt64)">
+            <summary>Retrieves a Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="accountId">The ID of the
+            account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Insert(Google.Apis.Content.v2.Data.Account,System.UInt64)">
+            <summary>Creates a Merchant Center sub-account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.List(System.UInt64)">
+            <summary>Lists the sub-accounts in your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Patch(Google.Apis.Content.v2.Data.Account,System.UInt64,System.UInt64)">
+            <summary>Updates a Merchant Center account. This method supports patch semantics.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="accountId">The ID of the
+            account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.Update(Google.Apis.Content.v2.Data.Account,System.UInt64,System.UInt64)">
+            <summary>Updates a Merchant Center account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="accountId">The ID of the
+            account.</param>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.CustombatchRequest">
+            <summary>Retrieves, inserts, updates, and deletes multiple Merchant Center (sub-)accounts in a single
+            request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.AccountsCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.DeleteRequest">
+            <summary>Deletes a Merchant Center sub-account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.DeleteRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.DeleteRequest.AccountId">
+            <summary>The ID of the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.GetRequest">
+            <summary>Retrieves a Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.GetRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.GetRequest.AccountId">
+            <summary>The ID of the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.InsertRequest">
+            <summary>Creates a Merchant Center sub-account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Account,System.UInt64)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.InsertRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.ListRequest">
+            <summary>Lists the sub-accounts in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.PageToken">
+            <summary>The token returned by the previous request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.MaxResults">
+            <summary>The maximum number of accounts to return in the response, used for paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.PatchRequest">
+            <summary>Updates a Merchant Center account. This method supports patch semantics.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.PatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Account,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Patch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.PatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.PatchRequest.InitParameters">
+            <summary>Initializes Patch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.AccountId">
+            <summary>The ID of the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.PatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountsResource.UpdateRequest">
+            <summary>Updates a Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.UpdateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Account,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Update request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.UpdateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountsResource.UpdateRequest.InitParameters">
+            <summary>Initializes Update parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.AccountId">
+            <summary>The ID of the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountsResource.UpdateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountstatusesResource">
+            <summary>The "accountstatuses" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.AccountstatusesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.Custombatch(Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequest)">
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.Get(System.UInt64,System.UInt64)">
+            <summary>Retrieves the status of a Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="accountId">The ID of the
+            account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.List(System.UInt64)">
+            <summary>Lists the statuses of the sub-accounts in your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.AccountstatusesCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountstatusesResource.GetRequest">
+            <summary>Retrieves the status of a Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.AccountId">
+            <summary>The ID of the account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.AccountstatusesResource.ListRequest">
+            <summary>Lists the statuses of the sub-accounts in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.PageToken">
+            <summary>The token returned by the previous request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.MaxResults">
+            <summary>The maximum number of account statuses to return in the response, used for paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.AccountstatusesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource">
+            <summary>The "datafeeds" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.DatafeedsResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Batch(Google.Apis.Content.v2.Data.DatafeedsBatchRequest)">
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Custombatch(Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequest)">
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Delete(System.UInt64,System.UInt64)">
+            <summary>Deletes a datafeed from your Merchant Center account.</summary>
+            <param name="merchantId"></param>
+            <param name="datafeedId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Get(System.UInt64,System.UInt64)">
+            <summary>Retrieves a datafeed from your Merchant Center account.</summary>
+            <param name="merchantId"></param>
+            <param name="datafeedId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Insert(Google.Apis.Content.v2.Data.Datafeed,System.UInt64)">
+            <summary>Registers a datafeed with your Merchant Center account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.List(System.UInt64)">
+            <summary>Lists the datafeeds in your Merchant Center account.</summary>
+            <param name="merchantId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Patch(Google.Apis.Content.v2.Data.Datafeed,System.UInt64,System.UInt64)">
+            <summary>Updates a datafeed of your Merchant Center account. This method supports patch semantics.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId"></param>
+            <param name="datafeedId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.Update(Google.Apis.Content.v2.Data.Datafeed,System.UInt64,System.UInt64)">
+            <summary>Updates a datafeed of your Merchant Center account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId"></param>
+            <param name="datafeedId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.DatafeedsBatchRequest)">
+            <summary>Constructs a new Batch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.InitParameters">
+            <summary>Initializes Batch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.BatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.DatafeedsCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest">
+            <summary>Deletes a datafeed from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.GetRequest">
+            <summary>Retrieves a datafeed from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.InsertRequest">
+            <summary>Registers a datafeed with your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Datafeed,System.UInt64)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.ListRequest">
+            <summary>Lists the datafeeds in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.PatchRequest">
+            <summary>Updates a datafeed of your Merchant Center account. This method supports patch semantics.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Datafeed,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Patch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.InitParameters">
+            <summary>Initializes Patch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.PatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest">
+            <summary>Updates a datafeed of your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Datafeed,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Update request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.InitParameters">
+            <summary>Initializes Update parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedsResource.UpdateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedstatusesResource">
+            <summary>The "datafeedstatuses" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.DatafeedstatusesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.Batch(Google.Apis.Content.v2.Data.DatafeedstatusesBatchRequest)">
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.Custombatch(Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequest)">
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.Get(System.UInt64,System.UInt64)">
+            <summary>Retrieves the status of a datafeed from your Merchant Center account.</summary>
+            <param name="merchantId"></param>
+            <param name="datafeedId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.List(System.UInt64)">
+            <summary>Lists the statuses of the datafeeds in your Merchant Center account.</summary>
+            <param name="merchantId"></param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.DatafeedstatusesBatchRequest)">
+            <summary>Constructs a new Batch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.InitParameters">
+            <summary>Initializes Batch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.BatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.DatafeedstatusesCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest">
+            <summary>Retrieves the status of a datafeed from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.UInt64)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest">
+            <summary>Lists the statuses of the datafeeds in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.DatafeedstatusesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.InventoryResource">
+            <summary>The "inventory" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.InventoryResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.Custombatch(Google.Apis.Content.v2.Data.InventoryCustomBatchRequest)">
+            <summary>Updates price and availability for multiple products or stores in a single request.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.Set(Google.Apis.Content.v2.Data.InventorySetRequest,System.UInt64,System.String,System.String)">
+            <summary>Updates price and availability of a product in your Merchant Center account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="storeCode">The code of the
+            store for which to update price and availability. Use online to update price and availability of an online
+            product.</param>
+            <param name="productId">The ID of the product for which to update price and
+            availability.</param>
+        </member>
+        <member name="T:Google.Apis.Content.v2.InventoryResource.CustombatchRequest">
+            <summary>Updates price and availability for multiple products or stores in a single request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.InventoryCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.InventoryResource.SetRequest">
+            <summary>Updates price and availability of a product in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.SetRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.InventorySetRequest,System.UInt64,System.String,System.String)">
+            <summary>Constructs a new Set request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.SetRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.InventoryResource.SetRequest.InitParameters">
+            <summary>Initializes Set parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.StoreCode">
+            <summary>The code of the store for which to update price and availability. Use online to update price
+            and availability of an online product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.ProductId">
+            <summary>The ID of the product for which to update price and availability.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.InventoryResource.SetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource">
+            <summary>The "products" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ProductsResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.Custombatch(Google.Apis.Content.v2.Data.ProductsCustomBatchRequest)">
+            <summary>Retrieves, inserts, and deletes multiple products in a single request.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.Delete(System.UInt64,System.String)">
+            <summary>Deletes a product from your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="productId">The ID of the
+            product.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.Get(System.UInt64,System.String)">
+            <summary>Retrieves a product from your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="productId">The ID of the
+            product.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.Insert(Google.Apis.Content.v2.Data.Product,System.UInt64)">
+            <summary>Uploads a product to your Merchant Center account.</summary>
+            <param name="body">The body of the request.</param>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.List(System.UInt64)">
+            <summary>Lists the products in your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource.CustombatchRequest">
+            <summary>Retrieves, inserts, and deletes multiple products in a single request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.ProductsCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.DryRun">
+            <summary>Flag to run the request in dry-run mode.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource.DeleteRequest">
+            <summary>Deletes a product from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.DeleteRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.String)">
+            <summary>Constructs a new Delete request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.DeleteRequest.InitParameters">
+            <summary>Initializes Delete parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.ProductId">
+            <summary>The ID of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.DryRun">
+            <summary>Flag to run the request in dry-run mode.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.DeleteRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource.GetRequest">
+            <summary>Retrieves a product from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.GetRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.GetRequest.ProductId">
+            <summary>The ID of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource.InsertRequest">
+            <summary>Uploads a product to your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.InsertRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.Product,System.UInt64)">
+            <summary>Constructs a new Insert request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.InsertRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.InsertRequest.InitParameters">
+            <summary>Initializes Insert parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.DryRun">
+            <summary>Flag to run the request in dry-run mode.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.InsertRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductsResource.ListRequest">
+            <summary>Lists the products in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.PageToken">
+            <summary>The token returned by the previous request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.MaxResults">
+            <summary>The maximum number of products to return in the response, used for paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductstatusesResource">
+            <summary>The "productstatuses" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.Content.v2.ProductstatusesResource.service">
+            <summary> The service whih this resource is belong to.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.Custombatch(Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequest)">
+            <summary>Gets the statuses of multiple products in a single request.</summary>
+            <param name="body">The body of the request.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.Get(System.UInt64,System.String)">
+            <summary>Gets the status of a product from your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+            <param name="productId">The ID of the
+            product.</param>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.List(System.UInt64)">
+            <summary>Lists the statuses of the products in your Merchant Center account.</summary>
+            <param name="merchantId">The ID of the managing account.</param>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest">
+            <summary>Gets the statuses of multiple products in a single request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.#ctor(Google.Apis.Services.IClientService,Google.Apis.Content.v2.Data.ProductstatusesCustomBatchRequest)">
+            <summary>Constructs a new Custombatch request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.GetBody">
+            <summary>Returns the body of the request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.InitParameters">
+            <summary>Initializes Custombatch parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.Body">
+            <summary>Gets or sets the body of this request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.CustombatchRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductstatusesResource.GetRequest">
+            <summary>Gets the status of a product from your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.ProductId">
+            <summary>The ID of the product.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="T:Google.Apis.Content.v2.ProductstatusesResource.ListRequest">
+            <summary>Lists the statuses of the products in your Merchant Center account.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.UInt64)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="M:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.MerchantId">
+            <summary>The ID of the managing account.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.PageToken">
+            <summary>The token returned by the previous request.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.MaxResults">
+            <summary>The maximum number of product statuses to return in the response, used for paging.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.Content.v2.ProductstatusesResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+    </members>
+</doc>
